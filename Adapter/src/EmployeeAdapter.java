@@ -3,11 +3,7 @@ import java.util.List;
 
 public class EmployeeAdapter implements Target{
 
-    private BillingSystem thirdPartyBillingSystem;
-
-    public EmployeeAdapter(BillingSystem thirdPartyBillingSystem) {
-        this.thirdPartyBillingSystem = thirdPartyBillingSystem;
-    }
+    private final BillingSystem thirdPartyBillingSystem = new BillingSystem();
 
     @Override
     public void processCompanySalary(String[][] employeeArray){
